@@ -3,12 +3,13 @@
 <head>
 	<title>SIWES MGT SYSTEM</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="text/css" href="assets/img/logo.jpg">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/awesome/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/Mycss.css">
-	<script src="assets/js/jquery.js"></script>
-	<script src="assets/js/bootstrap.js"></script>
+	<link rel="icon" type="text/css" href="img/logo.jpg">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/Mycss.css">
+	<script type="text/javascript" src="js/home.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
 
 	<style type="text/css">
   	.jumbotron{
@@ -34,7 +35,7 @@
 
 <!-- ======================Header======================= -->
 <header class="navbar-fixed-top relative">
-	<img src="assets/img/logo.jpg" class="headerimg">
+	<img src="img/logo.jpg" class="headerimg">
 	<h1>KANO STATE POLYTECHNIC</h1>
     <h3 style="margin-bottom: 0;">AMFANIN ILIMI AIKI DASHI</h3>
 </header>
@@ -42,7 +43,7 @@
 	<marquee>Welcome SOT SIWES Management System</marquee>
 </div>
 <!-- ======================Navbar======================= -->
-<div class="container content">
+<div class="container content" style="width: 100%;"> 
 <div class="container" style="width: 100%;">
 	<nav class="navbar navbar-inverse navbar-fixed-top relative">
 		<div class="container-fluid">
@@ -57,49 +58,36 @@
               <span class="icon-bar"></span>                        
             </button>
             <div class="collapse navbar-collapse" id="myNavbar">
-			   <!-- <ul class="nav navbar-nav">
-				  <li class="active"><a href="#"> <span class="glyphicon glyphicon-home"></span> HOME</a></li>
-				  <li><a href="assets/Guide.html">Guide</a></li>
-				  <li><a href="assets/About Us.html">About Us</a></li>
-			   </ul> -->
-			   <ul class="nav navbar-nav navbar-right">
-			      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Register <span class="caret"></span></a>
-                     <ul class="dropdown-menu">
-                         <li><a href="assets/StudentRegisteration.html"><i class="fa fa-graduation-cap"></i> Student</a></li>
-                         <li><a href="#"><i class="fa fa-user-md"></i> Staff</a></li>
+			   <ul class="nav navbar-nav">
+                    <li><a href="#"> <span class="glyphicon glyphicon-home"></span> HOME</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="indreg.html">IndustrialRegistration</a></li>
+                    <li><a href="monthrep.html">MonthlyReport</a></li>
+                    <li><a href="techrep.html">TechnicalReport</a></li>
+                    <li><a href="complain.html">Complain</a></li>
+                    <li><a href="aboutUs.html">AboutSIWES</a></li>
+                    <li><a href="guide.html">Guidance</a></li>
+                    <ul class="nav navbar-nav glyphicon" style="margin: auto auto;">
+                	    <li><a href="../index.html">Logout</a></li>
                     </ul>
-                  </li>
-			   </ul>
+                </ul>
 			</div>
 		</div>
 	</nav>
 </div>  
 <div class="container" style="clear:right; margin-top: 4%;">
 	<div class="row">
-		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 drop">
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 drop">
 		    
 		</div>
 		<div class="clearfix visible-xs"></div>
-		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 		<br>
 		<div class="well well-sm text-success">
-			<center></i>👇📥Please Log In</center>
+			<center>Click on your own choise button to continue the siwes activities.</center>
 		</div>
-			<form name="loginForm" action="assets/home.html">
-			    <div class="form-group">
-			    	<input class="form-control" type="text" name="Registration Number" id="un" placeholder="Registration Number" required>
-			    </div>
-			    <div class="form-group">
-			    	<input class="form-control" type="password" name="Password" id="Ps" placeholder="Password" required>
-			    </div>
-			    <div class="form-group">
-			    	<input class="form-control btn btn-success" type="submit" name="submit" value="Log in"  style="font-size: 170%; letter-spacing: 7px;font-weight: 600;">
-			    </div>
-			    <h2 class="text text-success" style="margin-top:-4%; font-size: 170%; float:right; font-weight: 600; color: green;"><a href="#">Log as Staff</a>
-			    </h2>
-			</form>
-		</div>
-		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
 		</div>
 	</div>
 </div>
@@ -171,5 +159,5 @@
 	<span>All rights reserved</span>
 </footer>
 </body>
-<script type="text/javascript" src="assets/js/bootstrap.css"></script>
+<script type="text/javascript" src="js/bootstrap.css"></script>
 </html>

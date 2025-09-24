@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Technical Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="text/css" href="img/logo.jpg">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/Mycss.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  <style type="text/css">
+    boby{
+       background: #F8F8FF;
+    }
+    .jumbotron{
+      background-color: #fff; 
+      line-height: 2;
+      font-size: 1.7rem;
+      text-align: center;
+      padding-bottom: 0;
+    }
+    .jumbotron h3{
+      color: #16611D;
+      font-size: 3rem;
+      box-shadow: 1px 1px 4px; 
+      padding: 1.5% 0; 
+      border-radius: 5%;
+    }
+    .ahover a:hover{
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="background1">
+
+<!-- ======================Header======================= -->
+<header class="navbar-fixed-top relative">
+  <img src="img/logo.jpg" class="headerimg">
+  <h1>KANO STATE POLYTECHNIC</h1>
+    <h3 style="margin-bottom: 0;">AMFANIN ILIMI AIKI DASHI</h3>
+</header>
+<div class="container-success marq">
+  <marquee>Welcome SOT SIWES Management System</marquee>
+</div>
+<!-- ======================Navbar======================= -->
+<div class="container expand-nav">
+  <nav class="navbar navbar-inverse navbar-fixed-top relative">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html">
+          SIWES MANAGEMENT PORTAL
+        </a>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html"> <span class="glyphicon glyphicon-home"></span> HOME</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="indreg.html">IndustrialRegistration</a></li>
+                    <li><a href="monthrep.html">MonthlyReport</a></li>
+                    <li><a href="#">TechnicalReport</a></li>
+                    <li><a href="complain.html">Complain</a></li>
+                    <li><a href="aboutUs.html">AboutSIWES</a></li>
+                    <li><a href="guide.html">Guidance</a></li>
+                    <ul class="nav navbar-nav glyphicon" style="margin: auto auto;">
+                      <li><a href="../index.html">Logout</a></li>
+                    </ul>
+                </ul>
+            </div>
+    </div>
+  </nav>
+</div>  
+
+<!--================= Body Section=================-->
+<div class="container">
+
+    <div class="jumbotron">
+        <p>
+          All services on this portal are restricted, hence, only authenticated user can access them.
+        </p>
+        <p style="width: 65%; margin: auto; color: darkgreen;">
+          Upload your Monthly progress Report: Week1, Week2, Week3, Week4, Include your
+          sketch / Diagram.
+        </p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3 col-xs-1 col-md-3 col-lg-3"> 
+      </div>
+<!--================= Form Section=================-->
+      <div class="col-sm-6 col-xs-10 col-md-6 col-lg-6">
+          <div class="text-center text-success well well-xs" style="font-size: 100%; margin-bottom: -1%;">
+            <i class="fa fa-graduation-cap fa-3x"><br>Monthly Report ↷ <br>1<sup>st</sup> Month</i>
+          </div>
+        <form name="monthrepform" class="form" method="post" action="#" onsubmit="return validateForm()">
+            <div class="form-group">
+            <input class="form-control" type="text" name="full name" placeholder="Name of Student" required>
+           </div>
+           <div class="form-group">
+            <input class="form-control"  type="text" name="reg no" placeholder="Registration Number" maxlength="11" required>
+           </div>
+           <h4 class="text text-success">Week1:</h4>
+           <div class="form-group">
+            <input class="form-control" type="file" id="w1" required>
+           </div>
+           <h4 class="text text-success">Week2:</h4>
+           <div class="form-group">
+            <input class="form-control" type="file" id="w2" required>
+           </div>
+           <h4 class="text text-success">Week3:</h4>
+           <div class="form-group">
+            <input class="form-control" type="file" placeholder="full name" id="w3" required>
+           </div>
+           <h4 class="text text-success">Week4:</h4>
+           <div class="form-group">
+            <input class="form-control" type="file" id="w4" required>
+           </div>
+                <div class="btn-group" style="width: 100%;">
+                  <input onmouseover="first()" type="submit" name="submit" class="btn btn-lg btn-success boxshadow" value="📤Upload" style="float: left;">
+                  <input type="reset" class="btn btn-lg btn-info boxshadow" value="Clear" style="float: right;">
+                </div>
+        </form>
+      </div>
+      <div class="col-sm-3 col-xs-1 col-md-3 col-lg-3"> 
+      </div>
+  </div>
+  <div class="jumbotron">
+         <p>
+          Please for all enquiries and/or complaints regarding the SIWES Activities
+                    Click on <a href="complain.html">Complain page</a>  or  send an email to <a href="sot.siwes.edu.ng">sot.siwes.edu.ng</a>
+              </p>
+        </div>
+</div>
+
+
+<!--================ footer ================-->
+<footer style="">
+  &copy; 2025 SOT
+  <hr>
+  <span>All rights reserved</span>
+</footer>
+</body>
+<script type="text/javascript" src="js/bootstrap.css"></script>
+<script type="text/javascript">
+  function validateForm() {
+  if (document.forms["monthrepform"]["submit"].click) {
+    alert("Your Monthly Report was Submitted Successfully");
+    window.location.href = "home.html";
+    return false;
+  }
+}
+</script>
+</html>

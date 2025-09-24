@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIWES Guidace</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="text/css" href="img/logo.jpg">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/Mycss.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+</head>
+<body class="background1">
+
+<!-- ======================Header====================== -->
+<header class="navbar-fixed-top relative">
+	<img src="img/logo.jpg" class="headerimg">
+	<h1>KANO STATE POLYTECHNIC</h1>
+    <h3 style="margin-bottom: 0;">AMFANIN ILIMI AIKI DASHI</h3>
+</header>
+<div class="container-success marq">
+	<marquee>Welcome SOT SIWES Management System</marquee>
+</div>
+<!-- ======================Navbar======================= -->
+<div class="container content-img">
+	<nav class="navbar navbar-inverse navbar-fixed-top relative">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="../index.html">
+					SIWES MANAGEMENT PORTAL
+				</a>
+			</div>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html"> <span class="glyphicon glyphicon-home"></span> HOME</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="indreg.html">IndustrialRegistration</a></li>
+                    <li><a href="monthrep.html">MonthlyReport</a></li>
+                    <li><a href="techrep.html">TechnicalReport</a></li>
+                    <li><a href="complain.html">Complain</a></li>
+                    <li><a href="aboutUs.html">AboutSIWES</a></li>
+                    <li><a href="#">Guidance</a></li>
+                    <ul class="nav navbar-nav glyphicon" style="margin: auto auto;">
+                      <li><a href="../index.html">Logout</a></li>
+                    </ul>
+                </ul>
+            </div>
+		</div>
+	</nav>
+</div> 
+
+	<!--================= Body Animation Section =================-->
+<div class="container">
+	<div class="jumbotron">
+					<h3>
+						Welcome to KANO STATE POLYTECHNIC, Student Industrial Work and Experience Scheme (SIWES) Portal
+					</h3>
+					<hr>
+					<p>
+						All services on this portal are restricted, hence, only authenticated users can access them. Please login Students should use their Registration numbers and passwords when login.
+					</p>
+					<hr>
+					<p>
+						The Students Industrial Work Experience Scheme (SIWES) is a skills training 
+						programme designed to expose and prepare students of universities and other 
+						tertiary institutions for the Industrial Work situation they are likely to meet 
+						after graduation. 
+					</p>
+			  </div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="text-success well well-sm boxshadow center">
+			    <div class="page-header">
+			        <h5 class="aligncenter"><strong><i class="fa fa-graduation-cap fa-2x fa-spin"></i><i class="fa fa-graduation-cap fa-3x"></i>Students</strong></h5>
+			        <center><button onclick="drop1()">👇<span class="glyphicon glyphicon-chevron-down"></span></button></center>
+			    </div>	    
+                <div class="text-success dropdowncontent" id="one" style="font-size: 1.4rem;">
+                    <ol type="1">
+                    	<li>Complete Section(Student's Profile) as soon as you obtain in the registration page bofore you log in.</li>
+                    	<li>Before commencing your training, make sure you have carefully read and understood the instructions given on the Code of Conduct for students on Industrial Attachment.</li>
+                    	<li>On commencing your training, obtain the information required on the industry's Profile.</li>
+                    	<li>At the end of each day in training, record fully and clearly all functions carried out. (Attach, where necessary), briefly theory, sketches and diagrams for clarity.</li>
+                    	<li>At the end of each month in training, provide a brief summary of the month's activities, and then submit it through this Portal.</li>
+                    </ol>
+			        <center><button onclick="drop2()"><span class="glyphicon glyphicon-chevron-up"></span></button></center>
+                </div>
+			</div>
+		</div>
+		<div  class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="text-success well well-sm boxshadow center">
+			    <div class="page-header">
+				   <h5 class="aligncenter"><strong><i class="fa fa-user-md fa-2x fa-spin"></i> Industry Based Supervisor/Trainer</strong></h5>
+				   <center><button onclick="drop3()">👇<span class="glyphicon glyphicon-chevron-down"></span></button></center>
+			    </div>
+			    <div class="text-success dropdowncontent" id="two" style="font-size: 1.4rem;">
+			    	<ol type="one">
+			    		<li>Help the trainee-student provide the information under the Industry's Profile section.</li>
+			    		<li>At the end of each month in training of the student, receive report summary  from the student</li>
+			    		</li> check the accuracy of his/his entries and </li>
+			    	    <li> then complete the appropriate portions of Section.</li>
+			    		<li>On the compeletion  of the training, obtain the report from the student, </li>
+			    		<li> complete the Terminal Section, and then submit the report to the student in order to submit to the school's SIWES Portal.</li>
+			    	</ol>
+			    	<center><button onclick="drop4()"><span class="glyphicon glyphicon-chevron-up"></span></button></center>
+			    </div>
+			</div>    
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			 <div class="text-success well well-sm boxshadow center">
+			 	<div class="page-header">
+			 		<h5 class="aligncenter"><strong><i class="fa fa-book fa-2x fa-spin"></i> University-Based Training Staff</strong></h5>
+			 		<center><button onclick="drop5()">👇<span class="glyphicon glyphicon-chevron-down"></span></button></center>
+			 	</div>
+			 	<div class="text-success dropdowncontent" id="three" style="font-size: 1.4rem;">
+			 		<ol type="1">
+			 			<li>Make sure that each student has select the appropriate training Industry before the commence of monthly visit</li>
+			 			<li>On you monthly visit to the student-in-training, you have to verify that all necessary activities have been made to each SIWES Student, and then grade the Student base on his Performance</li>
+			 			<li>After the visit, head on to your account to apporove or decline student for final SIWES defence.</li>
+			 		</ol>
+			 		<center><button onclick="drop6()"><span class="glyphicon glyphicon-chevron-up"></span></button></center>
+			 	</div>
+		</div>
+	</div>
+</div>
+
+
+<!-- About SIWES -->
+			  <div class="jumbotron">
+					<h3>What is SIWES</h3>
+					<hr>
+					<img class="aboutsiwesimg" src="img/siwes8.png" alt="aboutsiwesimg">
+					<p>
+						The Students Industrial Work Experience Scheme (SIWES) is a skills training 
+						programme designed to expose and prepare students of universities and other 
+						tertiary institutions for the Industrial Work situation they are likely to meet 
+						after graduation. 
+					</p>
+					<hr>
+					<img class="aboutsiwesimgright" src="img/siwes1.png" alt="aboutsiwesimg">
+					<p>
+						The major benefit to students who partake in the SIWES are the skills and competencies acquired. The relevant production skills remain a part of the recipients of industrial training as life-long assets which cannot be taken away from them. This is because the knowledge and skills acquired through training are internalized and become relevant when required to perform jobs.
+					</p>
+			  </div>
+
+<!-- how to choose an organisation/industrial attachment  -->
+			  <div class="jumbotron">
+					<h3>How to choose an industrial attachment</h3>
+					<hr>
+					<img class="aboutsiwesimg" src="img/siwes4.jpg" alt="aboutsiwesimg">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur..
+					</p>
+			  </div>
+
+<!-- how to choose Area of specialization in the industry  -->
+			  <div class="jumbotron">
+					<h3>How to choose Area of specialization in the industry </h3>
+					<hr>
+					<img class="aboutsiwesimgright" src="img/cse.jpg" alt="aboutsiwesimg">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.
+					</p>
+
+			  </div>
+
+			  <div class="jumbotron">
+				  	<p>
+						Please for all enquiries and/or complaints regarding the SIWES Activities
+	                    Click on <a href="#">Contact Us page</a>  or  send an email to <a href="sot.siwes.edu.ng">sot.siwes.edu.ng</a>
+		            </p>
+			  </div>
+		  </div>
+
+	</section>
+
+<!--================ footer ================-->
+<footer style="width:100%; overflow: hidden;">
+	&copy; 2025 SOT
+	<hr>
+	<span>All rights reserved</span>
+</footer>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/Myjs.js"></script>
+</body>
+</html>

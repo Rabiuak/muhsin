@@ -125,8 +125,17 @@ header h3{
     .relative{
         position:relative;
     }
+
+    .expand-nav{
+        width: 100%;
+    }
+
+    /*================Content================*/
     .form{
         padding: 10px;
+    }
+    .form-control{
+        height: 5rem
     }
     .form div{
          box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);

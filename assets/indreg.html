@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Student Registration</title>
+	<title>IndustrialRegistration</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="text/css" href="img/logo.jpg">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -45,11 +45,11 @@
 	<marquee>Welcome SOT SIWES Management System</marquee>
 </div>
 <!-- ======================Navbar======================= -->
-<div class="container">
+<div class="container expand-nav">
 	<nav class="navbar navbar-inverse navbar-fixed-top relative">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="../index.html">
+				<a class="navbar-brand" href="home.html">
 					SIWES MANAGEMENT PORTAL
 				</a>
 			</div>
@@ -59,11 +59,20 @@
               <span class="icon-bar"></span>                        
             </button>
             <div class="collapse navbar-collapse" id="myNavbar">
-			  <ul class="nav navbar-nav">
-				<li><a href="../index.html"> <span class="glyphicon glyphicon-home"></span> HOME</a></li>
-				<li><a href="Guide.html">Guide</a></li>
-				<li><a href="About Us.html">About Us</a></li>
-			  </ul>
+			    <ul class="nav navbar-nav">
+                    <li><a href="home.html"> <span class="glyphicon glyphicon-home"></span> HOME</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">IndustrialRegistration</a></li>
+                    <li><a href="monthrep.html">MonthlyReport</a></li>
+                    <li><a href="techrep.html">TechnicalReport</a></li>
+                    <li><a href="complain.html">Complain</a></li>
+                    <li><a href="aboutUs.html">AboutSIWES</a></li>
+                    <li><a href="guide.html">Guidance</a></li>
+                    <ul class="nav navbar-nav glyphicon" style="margin: auto auto;">
+                	    <li><a href="../index.html">Logout</a></li>
+                    </ul>
+                </ul>
 			</div>
 		</div>
 	</nav>
@@ -78,10 +87,10 @@
 	        <div class="text-center text-success well well-xs" style="font-size: 100%; margin-bottom: -5%;">
 	     	    <i class="fa fa-graduation-cap fa-3x"><br>Registration of Industrial Being Attached ↷</i>
 	        </div>
-		    <form name="studentform" class="form" method="post" action="submit.php">
+		    <form name="indregform" class="form" method="post" action="submit.php">
 			     <div class="form-group">
 			     	<h2 align="center">Student Information</h2>
-				    <input class="form-control" type="text" name="full name" placeholder="full name" required>
+				    <input class="form-control" type="text" name="full name" placeholder="Full name" required>
 			     </div>
 			     <div class="form-group">
 				    <input class="form-control"  type="text" name="reg no" placeholder="Reg no" required>
@@ -96,16 +105,10 @@
 				    </select>
 			    </div>
 			    <div class="form-group">
-				    <input class="form-control" type="email" name="email" placeholder="email" required>
+				    <input class="form-control" type="email" name="email" placeholder="Email" required>
 			    </div>
 			    <div class="form-group">
-				    <input class="form-control" type="text" name="phonenumber" maxlength="11" placeholder="phonenumber" required>
-			    </div>
-			    <div class="form-group">
-				    <input class="form-control" type="password" name="firstpassword" placeholder="preferred password" required>
-			    </div>
-			    <div class="form-group">
-				    <input  class="form-control" type="password" name="secondpassword" placeholder="re-enter password" required>
+				    <input class="form-control" type="text" name="phonenumber" maxlength="11" placeholder="Phonenumber" required>
 			    </div>
 			    <h2 align="center">Industrial Information</h2>
 			    <div class="form-group">
@@ -123,8 +126,13 @@
 			    <div class="form-group">
 			    	<input class="form-control" type="text" name="duration" id="il" placeholder="Duration" required>
 			    </div>
+			    <center style="color: red;"><label>Upload your Acceptance Letter</label></center>
+			    <div class="form-group">
+
+			    	<input class="form-control" type="file" name="duration" id="il" placeholder="Duration" required>
+			    </div>
                 <div class="btn-group" style="width: 100%;">
-                	<input onmouseover="first()" type="submit" class="btn btn-lg btn-success boxshadow" value="Register" style="float: left;">
+                	<input onmouseover="first()" type="submit" class="btn btn-lg btn-success boxshadow" value="📤Submit" style="float: left;">
                 	<input type="reset" class="btn btn-lg btn-info boxshadow" value="Clear" style="float: right;">
                 </div>
 		    </form>
@@ -135,7 +143,7 @@
 	<div class="jumbotron">
 				 <p>
 					Please for all enquiries and/or complaints regarding the SIWES Activities
-                    Click on <a href="#">Contact Us page</a>  or  send an email to <a href="sot.siwes.edu.ng">sot.siwes.edu.ng</a>
+                    Click on <a href="complain.html">Compalin page</a>  or  send an email to <a href="sot.siwes.edu.ng">sot.siwes.edu.ng</a>
 	            </p>
 			  </div>
 </div>
@@ -149,14 +157,5 @@
 </footer>
 </body>
 <script type="text/javascript" src="js/bootstrap.css"></script>
-<script type="text/javascript">
-	function first(){
-		a = document.studentform.firstpassword.value;
-        b = document.studentform.secondpassword.value;
-       if(a!==b){
-       	alert("Password Incorrect!");
-       	return false;
-       }
-	}
-</script>
+
 </html>
